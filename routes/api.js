@@ -21,10 +21,18 @@ router.post('/list', (req, res, next) => {
       }
 });
 
-
 router.delete('/list/:id', (req, res, next) => {
-    Item.findOneAndDelete({"_id": req.params.id})
+  Item.findOneAndDelete({"_id": req.params.id})
+  .then(data => res.json(data))
+  .catch(next)
+})
+
+
+router.put('/update/:id', (req, res, next) => {
+    Item.findByIdAndUpdate({"_id": req.params.id}, {$set:{action:"test update success"}},)
     .then(data => res.json(data))
     .catch(next)
 })
+
+
 module.exports = router;

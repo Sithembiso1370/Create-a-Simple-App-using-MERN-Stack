@@ -1,6 +1,9 @@
 
-1. Server Setup - index.js
-2. Setup Routes - api.js
-3. Setup Item model - item.js
-4. Create connection string and connect to the db .env and index.js
-5.
+1. Server Setup - index.js **** 05/09/2022
+2. Setup Routes - api.js **** 05/09/2022
+3. Setup Item model - item.js **** 05/09/2022
+4. Create connection string and connect to the db .env and index.js **** 05/09/2022
+5.  TEST THE API  **** 05/09/2022
+6. Create the client/frontend
+7. Creating your Components
+8. Concurrently run frontend and backend with "npm run dev"
